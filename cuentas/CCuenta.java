@@ -1,12 +1,17 @@
 package cuentas;
 public class CCuenta {
 
-
+	/**
+	 * Atributos de la clase Cuenta
+	 */
     private String nombre;
     private String cuenta;
     private double saldo;
     private double tipoInteres;
-
+    
+    /*
+     * Metodos constructores
+     */
     public CCuenta()
     {
     }
@@ -17,11 +22,18 @@ public class CCuenta {
         setCuenta(cue);
         setSaldo(sal);
     }
+    /*
+     * @return devuelve el saldo
+     */
 
     public double estado()
     {
         return getSaldo();
     }
+    
+    /*
+     * Metodo ingresar
+     */
 
     public void ingresar(double cantidad) throws Exception
     {
